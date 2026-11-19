@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Luca Godoy · Volante Mixto</title>
+  <meta name="description" content="Luca Godoy, volante mixto. Portfolio deportivo, video de la temporada 2026 y contacto.">
+  <meta name="theme-color" content="#111311">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav">
+    <div class="nav__inner">
+      <a class="nav__logo" href="#inicio" aria-label="Luca Godoy, inicio">LG</a>
+      <nav class="nav__links" aria-label="Principal">
+        <a href="#perfil">Perfil</a>
+        <a href="#video">Video</a>
+        <a href="#trayectoria">Trayectoria</a>
+        <a href="#galeria">Galería</a>
+      </nav>
+      <a class="btn btn--primary btn--sm" href="#contacto">Contactar</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio">
+      <img class="hero__img" src="assets/foto-3.jpg" alt="Luca Godoy en cancha, con la camiseta naranja y verde" fetchpriority="high">
+      <div class="hero__shade" aria-hidden="true"></div>
+      <div class="container hero__content">
+        <p class="eyebrow eyebrow--wide">Volante Mixto · Pie Derecho · Argentina</p>
+        <h1 class="hero__title">Luca<br>Godoy</h1>
+        <p class="hero__lead">Disponible para nuevos desafíos deportivos.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#video">
+            <svg class="ico ico--fill" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.5-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5Z"/></svg>
+            Ver highlights
+          </a>
+          <a class="btn btn--ghost" href="#contacto">Contacto</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 01 PERFIL ============ -->
+    <section class="section section--dark" id="perfil">
+      <div class="container">
+        <div class="profile">
+          <div class="profile__text">
+            <p class="eyebrow">01 — Perfil</p>
+            <h2 class="h2">Ficha técnica</h2>
+            <p class="profile__bio">Mediocampista de perfil mixto, con experiencia competitiva, versatilidad y capacidad para desempeñarse en distintas dinámicas de juego. Destaca por su despliegue, lectura táctica y aporte tanto en la recuperación como en la construcción ofensiva.</p>
+            <p class="profile__bio">Actualmente, se encuentra disponible para nuevos desafíos deportivos, con el objetivo de aportar su experiencia y rendimiento a un nuevo proyecto futbolístico.</p>
+          </div>
+
+          <dl class="specs">
+            <div class="specs__cell">
+              <dt>Posición</dt>
+              <dd>Volante Mixto</dd>
+            </div>
+            <div class="specs__cell">
+              <dt>Pie hábil</dt>
+              <dd>Derecho</dd>
+            </div>
+            <div class="specs__cell">
+              <dt>Nacimiento</dt>
+              <dd>2001</dd>
+            </div>
+            <div class="specs__cell">
+              <dt>Altura</dt>
+              <dd>1,74 m</dd>
+            </div>
+            <div class="specs__cell">
+              <dt>Peso</dt>
+              <dd>70 kg</dd>
+            </div>
+            <div class="specs__cell">
+              <dt>Nacionalidad</dt>
+              <dd>Argentina</dd>
+            </div>
+            <div class="specs__cell specs__cell--wide">
+              <dt>Situación</dt>
+              <dd class="accent">Disponible</dd>
+            </div>
+          </dl>
+        </div>
+
+        <ul class="traits">
+          <li class="card trait">
+            <svg class="ico ico--lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z"/></svg>
+            <h3>Despliegue</h3>
+            <p>Versatilidad para adaptarse a distintas dinámicas de juego.</p>
+          </li>
+          <li class="card trait">
+            <svg class="ico ico--lg" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/></svg>
+            <h3>Lectura táctica</h3>
+            <p>Interpretación del juego y experiencia competitiva.</p>
+          </li>
+          <li class="card trait">
+            <svg class="ico ico--lg" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20v-1a5.5 5.5 0 0 1 5.5-5.5h2A5.5 5.5 0 0 1 15.5 19v1"/><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8"/><path d="M18.5 13.8A5.5 5.5 0 0 1 21.5 19v1"/></svg>
+            <h3>Recuperación y construcción</h3>
+            <p>Aporte tanto en la recuperación como en la construcción ofensiva.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ 02 HIGHLIGHTS / VIDEO ============ -->
+    <section class="section section--alt" id="video">
+      <div class="container">
+        <p class="eyebrow">02 — Highlights</p>
+        <h2 class="h2">Míralo jugar</h2>
+        <p class="section__lead">Temporada 2026 · Volante Mixto</p>
+
+        <div class="player" id="player">
+          <video
+            id="highlight"
+            class="player__video"
+            src="assets/luca-volante-mixto-temporada-2026.mp4"
+            poster="assets/poster.jpg"
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            aria-label="Video de jugadas y rendimiento de Luca Godoy, temporada 2026">
+            Tu navegador no puede reproducir este video.
+          </video>
+
+          <div class="player__bar">
+            <input class="seek" id="seek" type="range" min="0" max="1000" step="1" value="0" aria-label="Línea de tiempo del video">
+
+            <div class="player__row">
+              <button class="ctl ctl--play" id="btnPlay" type="button" aria-label="Reproducir">
+                <svg class="ico-play ico--fill" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.5-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5Z"/></svg>
+                <svg class="ico-pause ico--fill" viewBox="0 0 24 24" aria-hidden="true" hidden><rect x="6" y="5" width="4.2" height="14" rx="1"/><rect x="13.8" y="5" width="4.2" height="14" rx="1"/></svg>
+              </button>
+
+              <button class="ctl" id="btnMute" type="button" aria-label="Activar sonido" aria-pressed="true">
+                <svg class="ico-muted" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4V5Z"/><path d="m16 9 5 6"/><path d="m21 9-5 6"/></svg>
+                <svg class="ico-sound" viewBox="0 0 24 24" aria-hidden="true" hidden><path d="M11 5 6 9H3v6h3l5 4V5Z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/></svg>
+              </button>
+
+              <span class="player__time" id="time" aria-live="off">0:00 / 0:00</span>
+
+              <button class="ctl ctl--right" id="btnFull" type="button" aria-label="Pantalla completa">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5"/><path d="M20 9V4h-5"/><path d="M4 15v5h5"/><path d="M20 15v5h-5"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 03 TRAYECTORIA ============ -->
+    <section class="section section--dark" id="trayectoria">
+      <div class="container">
+        <p class="eyebrow">03 — Trayectoria</p>
+        <h2 class="h2">Recorrido</h2>
+
+        <ol class="timeline">
+          <li class="timeline__item is-current">
+            <span class="timeline__label">Actualidad</span>
+            <h3>Disponible para nuevos desafíos</h3>
+            <p>Volante Mixto · Pierna derecha</p>
+          </li>
+          <li class="timeline__item">
+            <span class="timeline__label">Etapa anterior</span>
+            <h3>[Club anterior]</h3>
+            <p>[Logro o dato destacado: ascenso, títulos, convocatorias]</p>
+          </li>
+          <li class="timeline__item">
+            <span class="timeline__label">Formación</span>
+            <h3>[Club de inferiores]</h3>
+            <p>Divisiones formativas</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ 04 GALERÍA ============ -->
+    <section class="section section--alt" id="galeria">
+      <div class="container">
+        <p class="eyebrow">04 — Galería</p>
+        <h2 class="h2">En cancha</h2>
+
+        <div class="gallery">
+          <figure class="gallery__item gallery__item--main">
+            <img src="assets/foto-1.jpg" alt="Luca Godoy de espaldas con la camiseta número 10, frente al arco" loading="lazy">
+          </figure>
+          <figure class="gallery__item">
+            <img src="assets/foto-2.jpg" alt="Luca Godoy conduciendo la pelota durante un partido" loading="lazy">
+          </figure>
+          <figure class="gallery__item">
+            <img src="assets/foto-3.jpg" alt="Luca Godoy en cancha entre humo naranja" loading="lazy">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACTO ============ -->
+    <section class="contact" id="contacto">
+      <div class="container contact__grid">
+        <div class="contact__text">
+          <h2 class="contact__title">¿Lo querés en tu equipo?</h2>
+          <p>Disponible para pruebas y entrenamientos. Escribinos y te mandamos el video completo.</p>
+        </div>
+
+        <ul class="contact__list">
+          <li>
+            <a class="contact__btn" href="https://wa.me/5491170249727" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 20.5 5 16A8.5 8.5 0 1 1 8 19l-4.5 1.5Z"/></svg>
+              <span>WhatsApp · +54 9 11 7024-9727</span>
+            </a>
+          </li>
+          <li>
+            <a class="contact__btn" href="https://instagram.com/lucaa.godoy" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6" fill="currentColor"/></svg>
+              <span>Instagram · @lucaa.godoy</span>
+            </a>
+          </li>
+          <li>
+            <a class="contact__btn" href="mailto:lukitaggodoy@gmail.com">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/></svg>
+              <span>Correo · lukitaggodoy@gmail.com</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>Luca Godoy · Futbolista</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
